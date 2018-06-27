@@ -1,0 +1,132 @@
+/**index.wxss**/
+
+page {
+    background: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 头部样式 */
+
+.type .header {
+    height: 130rpx;
+    line-height: 130rpx;
+    background: #FF6412;
+    color: #fff;
+    display: flex;
+}
+
+.type .header .list {
+    margin: 0 20rpx;
+    position: relative;
+}
+
+.type .header .active {
+    font-size: 48rpx;
+    font-weight: bold;
+}
+
+.type .header .active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 20rpx;
+    left: 0;
+    width: 100%;
+    height: 4rpx;
+    background: #fff;
+}
+
+/* 菜单列表的主要内容 */
+
+.type .content {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    height: 88.3vh;
+}
+
+/* 导航 */
+
+.type .content .directory {
+    flex: 0 0 172rpx;
+    background: #FF6412;
+    height: inherit;
+}
+
+.type .content .directory view {
+    padding: 40rpx 10rpx;
+    text-align: center;
+    background: #FF6412;
+    position: relative;
+    color: #fff;
+}
+
+.type .content .directory .active {
+    background: #fff;
+    color: #FF6412;
+}
+
+.type .content .directory .active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 8rpx;
+    height: 40%;
+    background: #FF6412;
+}
+
+/* 商品列表 */
+
+.type .content .list {
+    height: inherit;
+}
+
+.type .content .item .title {
+    padding: 16rpx 30rpx;
+    font-size: 24rpx;
+    color: #666;
+    background: #f2f2f2;
+}
+
+.type .content .item .flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 69rpx 30rpx 79rpx 18rpx;
+    border-bottom: 1rpx solid #f2f2f2;
+}
+
+.type .content .item .flex image {
+    flex: 0 0 120rpx;
+    height: 120rpx;
+}
+
+.type .content .item .flex .flex-dirction {
+    width: 380rpx;
+    margin-left: 18rpx;
+    display: flex;
+    font-weight: bold;
+    color: #333;
+    font-size: 32rpx;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.type .content .item .flex .flex-dirction .ell {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.type .content .item .flex .flex-dirction text {
+    color: #FF003E;
+}
+
+.type .content .item .flex .step {
+    flex: 1;
+    align-self: flex-end;
+    transform: scale(.8);
+}

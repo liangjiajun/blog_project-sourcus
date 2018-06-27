@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class='type'>
+    <view class='header'>
+      <text class='list active'>菜单</text>
+    </view>
+    <view class='content'>
+      <!-- 侧边导航 -->
+      <scroll-view class='directory' scroll-y>
+        <view 
+          catchtap='directoryActive'
+          class="{{item.check ? 'active' : ''}}" 
+          wx:for="{{directory}}" 
+          wx:for-index="index"
+          data-ind="{{index}}" 
+          wx:key="{{item}}" >
+          {{item.title}}
+        </view>
+      </scroll-view>
+      
+      <!-- 商品内容 -->
+      <scroll-view 
+        class='list' 
+        scroll-y 
+        bindscroll="scroll" 
+        scroll-with-animation="true" 
+        scroll-into-view="{{scrollTop}}">
+          <view 
+            id="list{{index}}"
+            class='item' 
+            wx:for="{{list}}" 
+            wx:for-index="index" 
+            wx:key="{{index}}">
+            <view class='title'>{{item.title}}</view>
+            <view 
+              class='flex' 
+              wx:for="{{item.item}}" 
+              wx:for-index="ind"  
+              wx:for-item="item1" 
+              wx:key="{{ind}}" >
+              <image src='../../images/pic.png'></image>
+              <view class='flex-dirction'>
+                <view class='ell'>{{item1.title}}</view>
+                <text>￥ {{item1.price}}</text>
+              </view>
+              <view class='step'></view>
+            </view>
+          </view>
+      </scroll-view>
+    </view>
+</view>
+
