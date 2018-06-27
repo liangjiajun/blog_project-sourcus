@@ -2,6 +2,8 @@
 
 > 仿饿了么菜单滚动
 
+![image](https://note.youdao.com/yws/res/14932/WEBRESOURCE4599ce05b312372e3f72f837f049eae9)
+
 ```
 ├─images //商品的默认图片
 ├─pages //项目主目录
