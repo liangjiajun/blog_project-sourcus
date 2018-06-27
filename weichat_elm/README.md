@@ -9,4 +9,4 @@
 │  └─index //项目内容
 └─utils //小程序自带的处理逻辑
 ```
-![image](https://note.youdao.com/yws/res/14932/WEBRESOURCE4599ce05b312372e3f72f837f049eae9)
+![image](http://img.hb.aicdn.com/9431eb788acc98e93fde018ed6ef7d639b31635e473e2-Rp7Z6c)
